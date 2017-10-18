@@ -2,7 +2,7 @@ package br.com.persistencia;
 
 import br.com.logica.Conta;
 
-public class ContaDAOSQL extends BD implements ContaDAO {
+public class ContaDAOSQL extends GenericDAO implements ContaDAO {
 
 	@Override
 	public void save(Conta conta) {

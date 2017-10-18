@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import br.com.logica.Conta;
-import br.com.persistencia.BD;
+import br.com.persistencia.GenericDAO;
 
 public class Execucao {
 	
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		
-		if(BD.getConexao()== null){
+		if(GenericDAO.getConexao()== null){
 			System.out.println("Falha na Conexao");
 		}else{
 			System.out.println("Conectado Com Sucesso!");
