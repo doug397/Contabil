@@ -5,6 +5,6 @@ import br.com.logica.Conta;
 public interface ContabilSessao {
 		public String gerarLivro();
 		public void registrarFatoContabil();
-		public void addConta(Conta conta);
+		public void addConta(Conta conta) throws Exception;
 
 }

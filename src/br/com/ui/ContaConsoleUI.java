@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import br.com.sessao.ContabilSessao;
 
+
 public class ContaConsoleUI {
 	
 	private ContabilSessao logica;
@@ -34,6 +35,15 @@ public class ContaConsoleUI {
 		// capturar os dados digitados pelo USUArio
 		
 	//	this.logica(id,descricao, nomeContaCreditos,nomeContaDebito);
+	}
+	public void run() throws Exception{
+		while(true){
+			this.showMenu();
+		}
+	}
+	
+	public static void main(String[] args) throws Exception {
+		(new ContaConsoleUI()).run();
 	}
 
 }
